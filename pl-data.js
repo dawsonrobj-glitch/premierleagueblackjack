@@ -173,7 +173,7 @@ const ENTRIES = [
   { name: "Rob Dawson 2", paid: true, players: ["Anton Stach", "Mateus Fernandes", "Moises Caicedo", "Florian Wirtz"] },
   { name: "Jordan Hartley", paid: true, players: ["Kiernan Dewsbury-Hall", "John McGinn", "Pedro Porro", "Virgil Van Dijk"] },
   { name: "Kane Cooke", paid: true, players: ["Jeremy Doku", "Harry Wilson", "Dango Ouattara", "Dominik Szoboszlai"] },
-  { name: "Rob Dawson 1", paid: true, players: ["Ryan Gravenberch", "Bruno Fernandes", "Ricardo Calafiori", "Josko Gvardiol"] },
+  { name: "Rob Dawson 1", paid: true, players: ["Ryan Gravenberch", "Bruno Fernandes", "Ricardo Calafiori", "Marc Guehi"] },
   { name: "Josh Freeman", paid: true, players: ["Bruno Fernandes", "Cody Gakpo", "Declan Rice", "Jeremy Doku"] },
   { name: "Ashley Shepherd", paid: true, players: ["Archie Gray", "Morgan Rogers", "Declan Rice", "Kobbie Mainoo"] },
   { name: "Chris Hyett", paid: true, players: ["Harry Wilson", "Jeremy Doku", "Gabriel", "Harvey Barnes"] },
