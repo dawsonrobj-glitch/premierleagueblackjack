@@ -1,0 +1,34 @@
+name: Update PL Goals
+
+# Runs automatically once a day, and can also be triggered manually
+# from the Actions tab in GitHub if you ever want an instant refresh.
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 06:00 UTC every day
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated data.js
+
+jobs:
+  update-goals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest goals from FPL and update data.js
+        run: node scripts/update-goals.js
+
+      - name: Commit and push if data.js changed
+        run: |
+          git config user.name "PL Blackjack Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.js
+          git diff --cached --quiet && echo "No changes to commit." || git commit -m "Auto-update goals $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
