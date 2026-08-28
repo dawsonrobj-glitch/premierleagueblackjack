@@ -63,6 +63,7 @@ const PLAYERS = [
   { name: "Harvey Barnes",         club: "NEW", goals: 0, out: false },
   { name: "Thierno Barry",         club: "EVE", goals: 1, out: false },
   { name: "Jaka Bijol",            club: "LEE", goals: 0, out: false },
+  { name: "Enzo Fernandez",        club: "CHE", goals: 0, out: false },
   { name: "Jayden Bogle",          club: "LEE", goals: 0, out: false },
   { name: "Brian Brobbey",         club: "SUN", goals: 0, out: false },
   { name: "Emi Buendia",           club: "AVL", goals: 0, out: false },
