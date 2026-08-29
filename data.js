@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "28 August 2026 at 18:51";
+const LAST_UPDATED = "29 August 2026 at 12:55";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -71,7 +71,7 @@ const PLAYERS = [
   { name: "Moises Caicedo",        club: "CHE", goals: 0, out: false },
   { name: "Ricardo Calafiori",     club: "ARS", goals: 0, out: false },
   { name: "Dominic Calvert-Lewin", club: "LEE", goals: 0, out: false },
-  { name: "Rayan Cherki",          club: "MCI", goals: 0, out: false },
+  { name: "Rayan Cherki",          club: "MCI", goals: 2, out: false },
   { name: "Matheus Cunha",         club: "MUN", goals: 0, out: false },
   { name: "Mikel Damsgaard",       club: "BRE", goals: 0, out: false },
   { name: "Kiernan Dewsbury-Hall", club: "EVE", goals: 1, out: false },
