@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "31 August 2026 at 13:05";
+const LAST_UPDATED = "1 September 2026 at 11:43";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -130,7 +130,7 @@ const PLAYERS = [
   { name: "Declan Rice",           club: "ARS", goals: 0, out: false },
   { name: "Morgan Rogers",         club: "CHE", goals: 1, out: false },
   { name: "Georginio Rutter",      club: "BHA", goals: 0, out: false },
-  { name: "Bukayo Saka",           club: "ARS", goals: 1, out: false },
+  { name: "Bukayo Saka",           club: "ARS", goals: 2, out: false },
   { name: "Ismaila Sarr",          club: "CRY", goals: 0, out: false },
   { name: "Kevin Schade",          club: "BRE", goals: 0, out: false },
   { name: "Antoine Semenyo",       club: "MCI", goals: 0, out: false },
