@@ -58,7 +58,7 @@ const PLAYERS = [
   { name: "Ethan Ampadu",          club: "LEE", goals: 0, out: false },
   { name: "Elliott Anderson",      club: "MCI", goals: 0, out: false },
   { name: "Taiwo Awoniyi",         club: "COV", goals: 0, out: false },
-  { name: "Kevin Schade",           club: "BRE",  goals: 1, out: false},
+  { name: "Kevin Schade",          club: "BRE", goals: 1, out: false },
   { name: "Yasin Ayari",           club: "BHA", goals: 0, out: false },
   { name: "Harvey Barnes",         club: "NEW", goals: 0, out: false },
   { name: "Thierno Barry",         club: "EVE", goals: 1, out: false },
