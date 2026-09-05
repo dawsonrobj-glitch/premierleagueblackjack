@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "4 September 2026 at 11:07";
+const LAST_UPDATED = "5 September 2026 at 10:37";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -97,7 +97,7 @@ const PLAYERS = [
   { name: "Josko Gvardiol",        club: "MCI", goals: 1, out: false },
   { name: "Kai Havertz",           club: "ARS", goals: 1, out: false },
   { name: "Jack Hinshelwood",      club: "BHA", goals: 2, out: false },
-  { name: "Alexander Isak",        club: "LIV", goals: 1, out: false },
+  { name: "Alexander Isak",        club: "LIV", goals: 3, out: false },
   { name: "Wilson Isidor",         club: "SUN", goals: 1, out: false },
   { name: "Alex Iwobi",            club: "FUL", goals: 0, out: false },
   { name: "Brennan Johnson",       club: "EVE", goals: 0, out: false },
