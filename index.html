@@ -116,15 +116,28 @@
   }
 
   /* ── IDENTITY CHIP ── */
-  .identity { display: flex; justify-content: flex-end; margin-bottom: 0.75rem; min-height: 26px; }
-  .id-chip {
-    display: inline-flex; align-items: center; gap: 0.4rem;
-    background: var(--cyan-dim); border: 1px solid rgba(0,229,255,0.3);
-    color: var(--cyan); border-radius: 4px;
-    padding: 0.3rem 0.7rem; font-size: 0.72rem; font-weight: 600;
-    letter-spacing: 0.04em; cursor: pointer;
+  .search-wrap { position: relative; margin-bottom: 0.85rem; }
+  .search-input {
+    width: 100%; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text, #eef2f6);
+    padding: 0.65rem 2.2rem 0.65rem 0.9rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.9rem; letter-spacing: 0.01em;
+    outline: none; transition: border-color 0.15s;
   }
-  .id-chip.hidden { display: none; }
+  .search-input::placeholder { color: var(--muted); }
+  .search-input:focus { border-color: var(--cyan); }
+  .search-clear {
+    position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: var(--muted);
+    font-size: 0.85rem; cursor: pointer; padding: 0.2rem;
+  }
+  .search-clear:hover { color: var(--cyan); }
+  .search-clear.hidden { display: none; }
+  .search-empty {
+    text-align: center; color: var(--muted); font-size: 0.85rem;
+    padding: 2rem 1rem;
+  }
 
   /* ── FILTERS ── */
   .filters { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
@@ -158,14 +171,6 @@
 
   .row.busted { opacity: 0.55; }
   .row.r1 { border-color: rgba(0,229,255,0.5); box-shadow: inset 0 0 0 1px rgba(0,229,255,0.15), 0 0 20px rgba(0,229,255,0.06); }
-  .row.mine { border-color: rgba(195,255,61,0.5) !important; }
-  .row.mine::after {
-    content: 'YOU'; position: absolute; top: 0.6rem; right: 0.75rem;
-    font-family: 'Rajdhani', sans-serif; font-size: 0.55rem; font-weight: 700;
-    letter-spacing: 0.15em; color: var(--lime);
-    background: var(--lime-dim); border: 1px solid rgba(195,255,61,0.3);
-    padding: 0.1rem 0.35rem; border-radius: 3px;
-  }
 
   .rank {
     font-family: 'Rajdhani', sans-serif;
@@ -260,57 +265,6 @@
     padding: 0.1rem 0.35rem;
   }
 
-  /* ── OVERLAY ── */
-  .overlay {
-    position: fixed; inset: 0; z-index: 50;
-    background: rgba(4,7,14,0.9); backdrop-filter: blur(6px);
-    display: flex; align-items: center; justify-content: center; padding: 1.5rem;
-  }
-  .overlay.hidden { display: none; }
-  .modal {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 14px; padding: 2rem 1.5rem; width: 100%; max-width: 340px; text-align: center;
-    position: relative; overflow: hidden;
-  }
-  .modal::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: var(--cyan); box-shadow: 0 0 12px var(--cyan);
-  }
-  .modal .kick {
-    font-family: 'Rajdhani', sans-serif; font-size: 0.7rem; font-weight: 600;
-    letter-spacing: 0.28em; text-transform: uppercase; color: var(--cyan); margin-bottom: 0.6rem;
-  }
-  .modal h2 { font-family: 'Rajdhani', sans-serif; font-size: 1.7rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem; }
-  .modal p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin-bottom: 1.5rem; }
-  .modal input {
-    width: 100%; background: var(--bg2); border: 1px solid var(--border);
-    border-radius: 7px; color: var(--text);
-    font-family: 'Barlow Semi Condensed', sans-serif; font-size: 1rem; font-weight: 500;
-    padding: 0.75rem 1rem; text-align: center; outline: none; margin-bottom: 0.6rem;
-    transition: border-color 0.15s;
-  }
-  .modal input:focus { border-color: var(--cyan); }
-  .modal input.err { border-color: var(--magenta); }
-  .modal-err { font-size: 0.74rem; color: var(--magenta); min-height: 1.1rem; margin-bottom: 0.6rem; }
-  .modal-btn {
-    width: 100%; background: var(--cyan); border: none; border-radius: 7px;
-    color: #04121a; font-family: 'Rajdhani', sans-serif; font-size: 0.9rem; font-weight: 700;
-    letter-spacing: 0.1em; text-transform: uppercase; padding: 0.8rem; cursor: pointer; margin-bottom: 0.7rem;
-  }
-  .modal-skip { font-size: 0.74rem; color: var(--muted); background: none; border: none; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
-
-  #name-picker { margin-bottom: 0.75rem; text-align: left; }
-  .picker-lbl { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.5rem; text-align: center; }
-  .picker-btn {
-    display: block; width: 100%; text-align: left;
-    background: var(--bg2); border: 1px solid var(--border);
-    color: var(--text); border-radius: 6px;
-    padding: 0.6rem 0.9rem; margin-bottom: 0.4rem;
-    font-family: 'Barlow Semi Condensed', sans-serif; font-size: 0.9rem; font-weight: 500;
-    cursor: pointer; transition: all 0.15s;
-  }
-  .picker-btn:hover { border-color: var(--cyan); color: var(--cyan); }
-
   @media (max-width: 480px) {
     .masthead h1 { font-size: 2rem; }
     .score-total { font-size: 2rem; }
@@ -318,19 +272,6 @@
 </style>
 </head>
 <body>
-
-<div class="overlay" id="overlay">
-  <div class="modal">
-    <div class="kick">Premier League Blackjack</div>
-    <h2>Who Are You?</h2>
-    <p>Enter your first name to highlight your entry on the table.</p>
-    <input type="text" id="name-input" placeholder="Your first name…" maxlength="30" />
-    <div class="modal-err" id="name-err"></div>
-    <div id="name-picker" style="display:none"></div>
-    <button class="modal-btn" onclick="submitName()">Find My Entry</button>
-    <button class="modal-skip" onclick="skipName()">Just show me the table</button>
-  </div>
-</div>
 
 <nav class="nav">
   <button class="nav-btn active" onclick="switchTab('board', this)">Table</button>
@@ -347,8 +288,9 @@
 
   <div class="stats" id="stats"></div>
 
-  <div class="identity">
-    <button class="id-chip hidden" id="id-chip" onclick="resetName()">◆ <span id="chip-name"></span> · change</button>
+  <div class="search-wrap">
+    <input type="text" id="search-input" class="search-input" placeholder="Search entries…" maxlength="30" />
+    <button class="search-clear hidden" id="search-clear" onclick="clearSearch()">✕</button>
   </div>
 
   <div class="filters">
@@ -369,9 +311,8 @@
   <div class="plist" id="plist"></div>
 </div>
 
-<script src="data.js"></script>
+<script src="pl-data.js"></script>
 <script>
-let currentUser = null;
 let currentFilter = 'all';
 
 function clubOf(code) { return CLUBS[code] || { name: code, color: '#666' }; }
@@ -416,9 +357,21 @@ function renderBoard() {
   `;
   document.getElementById('updated').textContent = LAST_UPDATED;
 
-  const filtered = currentFilter === 'all' ? proc : proc.filter(e => e.status === currentFilter);
+  let filtered = currentFilter === 'all' ? proc : proc.filter(e => e.status === currentFilter);
+
+  if (searchQuery) {
+    const matchNames = new Set(matchEntries(searchQuery).map(m => m.name));
+    filtered = filtered.filter(e => matchNames.has(e.name));
+  }
+
   const board = document.getElementById('board');
   board.innerHTML = '';
+
+  if (filtered.length === 0) {
+    board.innerHTML = `<div class="search-empty">No entries match "${searchQuery}".</div>`;
+    return;
+  }
+
   let liveRank = 0, bustDiv = false;
 
   filtered.forEach((e, i) => {
@@ -435,8 +388,6 @@ function renderBoard() {
       rankHtml = `<div class="rank bust-rank">BUST</div>`;
       rowClass = 'busted';
     }
-    const isMe = currentUser && e.name.toLowerCase() === currentUser.toLowerCase();
-    if (isMe) rowClass += ' mine';
     const isLead = liveRank === 1 && e.status === 'live';
     const totalClass = e.status === 'busted' ? 'bust' : isLead ? 'lead' : '';
     const pct = Math.min(100, (e.total / CAP) * 100);
@@ -555,62 +506,23 @@ function matchEntries(val) {
   return hits;
 }
 
-function pickEntry(name) {
-  currentUser = name;
-  sessionStorage.setItem('plb_user', currentUser);
-  closeOverlay();
-}
+let searchQuery = '';
 
-function submitName() {
-  const input = document.getElementById('name-input');
-  const val = input.value.trim();
-  const errEl = document.getElementById('name-err');
-  const hits = matchEntries(val);
-
-  if (hits.length === 0) {
-    input.classList.add('err');
-    errEl.textContent = 'No match — check spelling or skip.';
-    return;
-  }
-  if (hits.length === 1) {
-    pickEntry(hits[0].name);
-    return;
-  }
-  // Multiple matches — show a picker of full names
-  errEl.textContent = '';
-  const picker = document.getElementById('name-picker');
-  picker.innerHTML = `<div class="picker-lbl">More than one match — tap yours:</div>` +
-    hits.map(h => `<button class="picker-btn" onclick="pickEntry('${h.name.replace(/'/g, "\\'")}')">${h.name}</button>`).join('');
-  picker.style.display = 'block';
-}
-function skipName() { currentUser = null; sessionStorage.setItem('plb_user', '__skip__'); closeOverlay(); }
-function resetName() {
-  sessionStorage.removeItem('plb_user'); currentUser = null;
-  document.getElementById('id-chip').classList.add('hidden');
-  document.getElementById('overlay').classList.remove('hidden');
-  document.getElementById('name-input').value = '';
-  document.getElementById('name-err').textContent = '';
-  const picker = document.getElementById('name-picker');
-  picker.style.display = 'none'; picker.innerHTML = '';
-}
-function closeOverlay() {
-  document.getElementById('overlay').classList.add('hidden');
-  if (currentUser) { document.getElementById('chip-name').textContent = currentUser; document.getElementById('id-chip').classList.remove('hidden'); }
+function clearSearch() {
+  searchQuery = '';
+  document.getElementById('search-input').value = '';
+  document.getElementById('search-clear').classList.add('hidden');
   renderBoard();
 }
+
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('name-input').addEventListener('keydown', e => {
-    if (e.key === 'Enter') submitName();
-    document.getElementById('name-input').classList.remove('err');
-    document.getElementById('name-err').textContent = '';
-  });
-  const saved = sessionStorage.getItem('plb_user');
-  if (saved === '__skip__') { document.getElementById('overlay').classList.add('hidden'); renderBoard(); }
-  else if (saved) {
-    const m = ENTRIES.find(e => e.name === saved);
-    if (m) { currentUser = m.name; document.getElementById('chip-name').textContent = currentUser; document.getElementById('id-chip').classList.remove('hidden'); document.getElementById('overlay').classList.add('hidden'); }
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', () => {
+    searchQuery = input.value.trim();
+    document.getElementById('search-clear').classList.toggle('hidden', searchQuery.length === 0);
     renderBoard();
-  }
+  });
+  renderBoard();
 });
 </script>
 </body>
