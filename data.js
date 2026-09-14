@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "13 September 2026 at 11:45";
+const LAST_UPDATED = "14 September 2026 at 12:11";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -59,7 +59,7 @@ const PLAYERS = [
   { name: "Elliott Anderson",      club: "MCI", goals: 0, out: false },
   { name: "Taiwo Awoniyi",         club: "COV", goals: 0, out: false },
   { name: "Kevin Schade",          club: "BRE", goals: 3, out: false },
-  { name: "Yasin Ayari",           club: "BHA", goals: 0, out: false },
+  { name: "Yasin Ayari",           club: "BHA", goals: 1, out: false },
   { name: "Harvey Barnes",         club: "NEW", goals: 1, out: false },
   { name: "Thierno Barry",         club: "EVE", goals: 1, out: false },
   { name: "Jaka Bijol",            club: "LEE", goals: 0, out: false },
@@ -79,7 +79,7 @@ const PLAYERS = [
   { name: "Virgil Van Dijk",       club: "LIV", goals: 0, out: false },
   { name: "Jeremy Doku",           club: "MCI", goals: 0, out: false },
   { name: "Patrick Dorgu",         club: "MUN", goals: 0, out: false },
-  { name: "Lewis Dunk",            club: "BHA", goals: 0, out: false },
+  { name: "Lewis Dunk",            club: "BHA", goals: 1, out: false },
   { name: "Anthony Elanga",        club: "NEW", goals: 2, out: false },
   { name: "Enzo Le Fee",           club: "SUN", goals: 1, out: false },
   { name: "Bruno Fernandes",       club: "MUN", goals: 3, out: false },
