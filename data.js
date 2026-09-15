@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "14 September 2026 at 12:11";
+const LAST_UPDATED = "15 September 2026 at 11:39";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -64,13 +64,13 @@ const PLAYERS = [
   { name: "Thierno Barry",         club: "EVE", goals: 1, out: false },
   { name: "Jaka Bijol",            club: "LEE", goals: 0, out: false },
   { name: "Enzo Fernandez",        club: "MCI", goals: 0, out: false },
-  { name: "Jayden Bogle",          club: "LEE", goals: 1, out: false },
+  { name: "Jayden Bogle",          club: "LEE", goals: 2, out: false },
   { name: "Brian Brobbey",         club: "SUN", goals: 0, out: false },
   { name: "Emi Buendia",           club: "AVL", goals: 0, out: false },
   { name: "Dan Burn",              club: "NEW", goals: 0, out: false },
   { name: "Moises Caicedo",        club: "CHE", goals: 0, out: false },
   { name: "Ricardo Calafiori",     club: "ARS", goals: 0, out: false },
-  { name: "Dominic Calvert-Lewin", club: "LEE", goals: 1, out: false },
+  { name: "Dominic Calvert-Lewin", club: "LEE", goals: 2, out: false },
   { name: "Rayan Cherki",          club: "MCI", goals: 2, out: false },
   { name: "Matheus Cunha",         club: "MUN", goals: 0, out: false },
   { name: "Mikel Damsgaard",       club: "BRE", goals: 0, out: false },
@@ -120,7 +120,7 @@ const PLAYERS = [
   { name: "Nico O'Reilly",         club: "MCI", goals: 0, out: false },
   { name: "Martin Odegaard",       club: "ARS", goals: 2, out: false },
   { name: "Callum Hudson Odoi",    club: "NFO", goals: 0, out: false },
-  { name: "Noah Okafor",           club: "LEE", goals: 0, out: false },
+  { name: "Noah Okafor",           club: "LEE", goals: 1, out: false },
   { name: "William Osula",         club: "NEW", goals: 0, out: false },
   { name: "Dango Ouattara",        club: "BRE", goals: 0, out: false },
   { name: "Martin Palestra",       club: "CHE", goals: 0, out: false },
