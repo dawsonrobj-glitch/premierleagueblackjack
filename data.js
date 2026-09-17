@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "16 September 2026 at 11:27";
+const LAST_UPDATED = "17 September 2026 at 11:37";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
