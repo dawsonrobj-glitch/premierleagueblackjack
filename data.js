@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "19 September 2026 at 10:54";
+const LAST_UPDATED = "20 September 2026 at 11:15";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -61,12 +61,12 @@ const PLAYERS = [
   { name: "Kevin Schade",          club: "BRE", goals: 3, out: false },
   { name: "Yasin Ayari",           club: "BHA", goals: 1, out: false },
   { name: "Harvey Barnes",         club: "NEW", goals: 1, out: false },
-  { name: "Thierno Barry",         club: "EVE", goals: 1, out: false },
+  { name: "Thierno Barry",         club: "EVE", goals: 2, out: false },
   { name: "Jaka Bijol",            club: "LEE", goals: 0, out: false },
   { name: "Enzo Fernandez",        club: "MCI", goals: 0, out: false },
   { name: "Jayden Bogle",          club: "LEE", goals: 2, out: false },
   { name: "Brian Brobbey",         club: "SUN", goals: 0, out: false },
-  { name: "Emi Buendia",           club: "AVL", goals: 0, out: false },
+  { name: "Emi Buendia",           club: "AVL", goals: 1, out: false },
   { name: "Dan Burn",              club: "NEW", goals: 0, out: false },
   { name: "Moises Caicedo",        club: "CHE", goals: 0, out: false },
   { name: "Ricardo Calafiori",     club: "ARS", goals: 0, out: false },
@@ -87,7 +87,7 @@ const PLAYERS = [
   { name: "Phil Foden",            club: "MCI", goals: 0, out: false },
   { name: "Gabriel",               club: "ARS", goals: 0, out: false },
   { name: "Cody Gakpo",            club: "LIV", goals: 1, out: false },
-  { name: "Alejandro Garnacho",    club: "AVL", goals: 0, out: false },
+  { name: "Alejandro Garnacho",    club: "AVL", goals: 1, out: false },
   { name: "Joe Gelhardt",          club: "HUL", goals: 0, out: false },
   { name: "Diego Gomez",           club: "BHA", goals: 0, out: false },
   { name: "Ryan Gravenberch",      club: "LIV", goals: 0, out: false },
@@ -107,7 +107,7 @@ const PLAYERS = [
   { name: "James Maddison",        club: "TOT", goals: 0, out: false },
   { name: "Harry Maguire",         club: "MUN", goals: 0, out: false },
   { name: "Kobbie Mainoo",         club: "MUN", goals: 0, out: false },
-  { name: "Johan Manzambi",        club: "AVL", goals: 0, out: false },
+  { name: "Johan Manzambi",        club: "AVL", goals: 1, out: false },
   { name: "Ollie McBurnie",        club: "HUL", goals: 0, out: false },
   { name: "John McGinn",           club: "AVL", goals: 0, out: false },
   { name: "Mikel Merino",          club: "ARS", goals: 0, out: false },
