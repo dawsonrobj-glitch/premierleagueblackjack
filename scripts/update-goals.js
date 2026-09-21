@@ -136,14 +136,17 @@ async function main() {
 
   changes.forEach(c => console.log(`  ${c.name}: ${c.from} → ${c.to}`));
 
+  if (changedCount === 0) {
+    console.log('\nNo goal changes since last run. Nothing to write — data.js left untouched.');
+    return;
+  }
+
   newSrc = newSrc.replace(
     /const LAST_UPDATED = ".*?";/,
     `const LAST_UPDATED = "${now}";`
   );
 
-  console.log(changedCount === 0
-    ? '\nNo goal changes since last run. Updating timestamp only.'
-    : `\n${changedCount} player(s) updated.`);
+  console.log(`\n${changedCount} player(s) updated.`);
 
   fs.writeFileSync(DATA_PATH, newSrc);
   console.log('data.js written.');
