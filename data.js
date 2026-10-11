@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "21 September 2026 at 12:22";
+const LAST_UPDATED = "11 October 2026 at 12:46";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -69,7 +69,7 @@ const PLAYERS = [
   { name: "Emi Buendia",           club: "AVL", goals: 1, out: false },
   { name: "Dan Burn",              club: "NEW", goals: 0, out: false },
   { name: "Moises Caicedo",        club: "CHE", goals: 0, out: false },
-  { name: "Ricardo Calafiori",     club: "ARS", goals: 0, out: false },
+  { name: "Ricardo Calafiori",     club: "ARS", goals: 1, out: false },
   { name: "Dominic Calvert-Lewin", club: "LEE", goals: 2, out: false },
   { name: "Rayan Cherki",          club: "MCI", goals: 3, out: false },
   { name: "Matheus Cunha",         club: "MUN", goals: 1, out: false },
@@ -93,7 +93,7 @@ const PLAYERS = [
   { name: "Ryan Gravenberch",      club: "LIV", goals: 0, out: false },
   { name: "Archie Gray",           club: "TOT", goals: 0, out: false },
   { name: "Marc Guehi",            club: "MCI", goals: 1, out: false },
-  { name: "Bruno Guimaraes",       club: "ARS", goals: 1, out: false },
+  { name: "Bruno Guimaraes",       club: "ARS", goals: 2, out: false },
   { name: "Josko Gvardiol",        club: "MCI", goals: 1, out: false },
   { name: "Kai Havertz",           club: "ARS", goals: 2, out: false },
   { name: "Jack Hinshelwood",      club: "BHA", goals: 2, out: false },
@@ -109,7 +109,7 @@ const PLAYERS = [
   { name: "Kobbie Mainoo",         club: "MUN", goals: 0, out: false },
   { name: "Johan Manzambi",        club: "AVL", goals: 1, out: false },
   { name: "Ollie McBurnie",        club: "HUL", goals: 0, out: false },
-  { name: "John McGinn",           club: "AVL", goals: 0, out: false },
+  { name: "John McGinn",           club: "AVL", goals: 1, out: false },
   { name: "Mikel Merino",          club: "ARS", goals: 0, out: false },
   { name: "Kaoru Mitoma",          club: "BHA", goals: 0, out: false },
   { name: "Tarik Muharemovic",     club: "LEE", goals: 0, out: false },
@@ -122,19 +122,19 @@ const PLAYERS = [
   { name: "Callum Hudson Odoi",    club: "NFO", goals: 0, out: false },
   { name: "Noah Okafor",           club: "LEE", goals: 1, out: false },
   { name: "William Osula",         club: "NEW", goals: 0, out: false },
-  { name: "Dango Ouattara",        club: "BRE", goals: 0, out: false },
+  { name: "Dango Ouattara",        club: "BRE", goals: 1, out: false },
   { name: "Martin Palestra",       club: "CHE", goals: 0, out: false },
-  { name: "Joao Pedro",            club: "CHE", goals: 3, out: false },
+  { name: "Joao Pedro",            club: "CHE", goals: 5, out: false },
   { name: "Pedro Porro",           club: "TOT", goals: 0, out: false },
   { name: "Rayan",                 club: "BOU", goals: 0, out: false },
   { name: "Declan Rice",           club: "ARS", goals: 0, out: false },
-  { name: "Morgan Rogers",         club: "CHE", goals: 3, out: false },
+  { name: "Morgan Rogers",         club: "CHE", goals: 4, out: false },
   { name: "Georginio Rutter",      club: "BHA", goals: 0, out: false },
   { name: "Bukayo Saka",           club: "ARS", goals: 3, out: false },
   { name: "Ismaila Sarr",          club: "CRY", goals: 0, out: false },
   { name: "Antoine Semenyo",       club: "MCI", goals: 2, out: false },
   { name: "Benjamin Sesko",        club: "MUN", goals: 1, out: false },
-  { name: "Dominic Solanke",       club: "TOT", goals: 0, out: false },
+  { name: "Dominic Solanke",       club: "TOT", goals: 1, out: false },
   { name: "Anton Stach",           club: "LEE", goals: 1, out: false },
   { name: "Dominik Szoboszlai",    club: "LIV", goals: 1, out: false },
   { name: "James Tarkowski",       club: "EVE", goals: 1, out: false },
