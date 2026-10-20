@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "19 October 2026 at 12:30";
+const LAST_UPDATED = "20 October 2026 at 11:35";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -104,7 +104,7 @@ const PLAYERS = [
   { name: "Justin Kluivert",       club: "BOU", goals: 1, out: false },
   { name: "Eli Junior Kroupi",     club: "BOU", goals: 0, out: false },
   { name: "Jorgen Strand Larsen",  club: "CRY", goals: 1, out: false },
-  { name: "James Maddison",        club: "TOT", goals: 0, out: false },
+  { name: "James Maddison",        club: "TOT", goals: 1, out: false },
   { name: "Harry Maguire",         club: "MUN", goals: 0, out: false },
   { name: "Kobbie Mainoo",         club: "MUN", goals: 0, out: false },
   { name: "Johan Manzambi",        club: "AVL", goals: 2, out: false },
