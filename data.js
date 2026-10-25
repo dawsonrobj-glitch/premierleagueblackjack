@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "20 October 2026 at 11:35";
+const LAST_UPDATED = "25 October 2026 at 10:20";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -85,7 +85,7 @@ const PLAYERS = [
   { name: "Bruno Fernandes",       club: "MUN", goals: 3, out: false },
   { name: "Mateus Fernandes",      club: "TOT", goals: 0, out: false },
   { name: "Phil Foden",            club: "MCI", goals: 1, out: false },
-  { name: "Gabriel",               club: "ARS", goals: 0, out: false },
+  { name: "Gabriel",               club: "ARS", goals: 1, out: false },
   { name: "Cody Gakpo",            club: "LIV", goals: 1, out: false },
   { name: "Alejandro Garnacho",    club: "AVL", goals: 1, out: false },
   { name: "Joe Gelhardt",          club: "HUL", goals: 1, out: false },
