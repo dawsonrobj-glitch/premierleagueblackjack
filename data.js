@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "2 November 2026 at 14:07";
+const LAST_UPDATED = "3 November 2026 at 13:12";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -61,7 +61,7 @@ const PLAYERS = [
   { name: "Kevin Schade",          club: "BRE", goals: 3, out: false },
   { name: "Yasin Ayari",           club: "BHA", goals: 3, out: false },
   { name: "Harvey Barnes",         club: "NEW", goals: 2, out: false },
-  { name: "Thierno Barry",         club: "EVE", goals: 3, out: false },
+  { name: "Thierno Barry",         club: "EVE", goals: 4, out: false },
   { name: "Jaka Bijol",            club: "LEE", goals: 0, out: false },
   { name: "Enzo Fernandez",        club: "MCI", goals: 1, out: false },
   { name: "Jayden Bogle",          club: "LEE", goals: 2, out: false },
