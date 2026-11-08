@@ -24,7 +24,7 @@
 // ============================================================
 
 const CAP = 21;
-const LAST_UPDATED = "7 November 2026 at 12:03";
+const LAST_UPDATED = "8 November 2026 at 12:23";
 
 // Club colours — primary hex used for the badge + accent bar.
 // Add or edit clubs here; the 3-letter code is what players reference.
@@ -71,7 +71,7 @@ const PLAYERS = [
   { name: "Moises Caicedo",        club: "CHE", goals: 0, out: false },
   { name: "Ricardo Calafiori",     club: "ARS", goals: 1, out: false },
   { name: "Dominic Calvert-Lewin", club: "LEE", goals: 3, out: false },
-  { name: "Rayan Cherki",          club: "MCI", goals: 4, out: false },
+  { name: "Rayan Cherki",          club: "MCI", goals: 5, out: false },
   { name: "Matheus Cunha",         club: "MUN", goals: 1, out: false },
   { name: "Mikel Damsgaard",       club: "BRE", goals: 0, out: false },
   { name: "Kiernan Dewsbury-Hall", club: "EVE", goals: 3, out: false },
@@ -118,9 +118,9 @@ const PLAYERS = [
   { name: "Pedro Neto",            club: "CHE", goals: 3, out: false },
   { name: "Lukas Nmecha",          club: "LEE", goals: 0, out: false },
   { name: "Nico O'Reilly",         club: "MCI", goals: 0, out: false },
-  { name: "Martin Odegaard",       club: "ARS", goals: 2, out: false },
+  { name: "Martin Odegaard",       club: "ARS", goals: 3, out: false },
   { name: "Callum Hudson Odoi",    club: "NFO", goals: 0, out: false },
-  { name: "Noah Okafor",           club: "LEE", goals: 1, out: false },
+  { name: "Noah Okafor",           club: "LEE", goals: 2, out: false },
   { name: "William Osula",         club: "NEW", goals: 1, out: false },
   { name: "Dango Ouattara",        club: "BRE", goals: 1, out: false },
   { name: "Martin Palestra",       club: "CHE", goals: 0, out: false },
